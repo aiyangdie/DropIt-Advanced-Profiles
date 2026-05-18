@@ -1,65 +1,140 @@
-## DropIt-Advanced-Profiles
+# 📁 DropIt-Advanced-Profiles
 
-# DropIt 文件自动分类配置（绿色版+高级规则）
+**Windows DropIt 文件自动分类高级配置，100+ 规则覆盖主流文件格式，开箱即用。**
 
-本项目为 Windows 下 [DropIt](https://www.dropitproject.com/) 文件自动整理工具的高级分类配置与绿色免安装版，适合需要高效、细致文件归类的用户。
-
-## 项目亮点
-
-- **绿色免安装**：直接下载即用，无需安装。
-- **分类细致**：涵盖图片、文档、压缩包、代码、设计、虚拟机、字体等主流及特殊文件类型。
-- **规则丰富**：支持自定义分类、目标文件夹和兜底"其它"分类，防止遗漏。
-- **一键下载**：软件和配置文件均可直接下载，开箱即用。
-- **支持分享与多设备协作**：配置文件可自由迁移、备份和分享。
-
-## 文件结构
-
-```
-├── DropIt.exe                # DropIt 主程序（绿色版，直接运行）
-├── Guide.pdf                 # DropIt 官方使用手册
-├── settings.ini              # DropIt 运行设置
-├── Profiles/
-│   ├── Default.ini           # 高级分类规则配置文件（推荐使用）
-│   ├── index.html            # 项目介绍网页（本地可直接打开）
-│   ├── 说明.txt              # 分类规则简要说明
-│   └── 软件在这里/
-│       └── dropit851.zip     # DropIt 绿色版完整压缩包（推荐下载）
-├── Images/                   # 图标与界面资源
-├── Languages/                # 多语言支持
-├── Lib/                      # 依赖库
-```
-
-## 快速开始
-
-1. **下载软件和配置文件**
-   - [⬇️ 下载 DropIt 绿色版](Profiles/软件在这里/dropit851.zip)
-   - [⬇️ 下载分类配置文件 Default.ini](/Default.ini)
-
-2. **使用方法**
-   1. 解压 `dropit851.zip`，运行 `DropIt.exe` 即可使用，无需安装。
-   2. 将 `Default.ini` 放入 DropIt 的 `Profiles` 目录（或覆盖同名文件）。
-   3. 启动 DropIt，选择本配置文件，开始自动整理你的文件。
-   4. 如需自定义分类或目标文件夹，可用文本编辑器打开 `Default.ini` 修改。
-   5. 建议定期备份配置文件，便于恢复和迁移。
-
-3. **网页版说明**
-   - 打开 `Profiles/index.html`，可查看本项目的极简网页介绍和下载入口。
-
-## 分类体系示例
-
-- **图片类**：jpg、png、heic、svg、psd、ai、ico、cur、webp、tiff、raw、bmp、gif、jp2、exr 等
-- **文档类**：pdf、doc、docx、xls、xlsx、ppt、odt、wps、epub、mobi、azw3、fb2、djvu 等
-- **压缩包类**：zip、rar、7z、cab、iso、tar、gz、bz2、xz 等
-- **代码/脚本类**：py、js、ts、go、rs、cs、swift、kt、dart、lua、vb、php、java、cpp、c、sh、bat、ps1 等
-- **其它**：设计、数据库、虚拟机、动画、字体、临时、图标、可执行文件等均有专门分类
-
-## 其它说明
-
-- 可根据实际需求调整分类和目标文件夹。
-- 如遇新文件类型，仿照现有规则在 `Default.ini` 中新增即可。
-- 建议定期整理"其它"分类，完善规则，提升自动化效果。
-- 如需最新版 DropIt，可访问 [DropIt 官网](https://www.dropitproject.com/)。
+[![在线访问](https://img.shields.io/badge/在线访问-点击体验-blue)](https://aiyangdie.github.io/DropIt-Advanced-Profiles)
 
 ---
 
-> 本项目为个人整理习惯分享，欢迎根据自身需求自由修改和扩展。如有建议或问题欢迎提 issue。 
+## 📌 项目简介
+
+DropIt-Advanced-Profiles 为 Windows 文件自动整理工具 [DropIt](https://www.dropitproject.com/) 提供高级分类配置文件，涵盖 100+ 条文件类型规则，覆盖压缩包、图片、视频、音频、文档、代码、设计、数据库、虚拟机镜像、电子书、字体等 15+ 大类。项目同时提供 DropIt 绿色免安装版，下载即用，零配置上手。
+
+---
+
+## ✨ 核心特性
+
+- 📦 **绿色免安装** — DropIt 便携版，解压即用，无需安装
+- 🗂️ **100+ 分类规则** — 覆盖 15+ 大类、100+ 种文件格式
+- 🔍 **细分到格式** — 同一大类按格式细分（如图片下分 JPG / PNG / GIF / SVG / PSD 等）
+- 🛡️ **兜底分类** — `*.*` 通配规则确保无遗漏，未匹配文件归入「其它」
+- ✏️ **易于定制** — INI 格式配置文件，文本编辑器即可修改
+- 🔄 **可迁移分享** — 配置文件可自由备份、迁移、多设备同步
+- 🌐 **下载页面** — 内置极简网页，提供软件和配置文件下载入口
+
+---
+
+## 🛠️ 技术栈
+
+| 技术 | 用途 |
+|------|------|
+| DropIt | Windows 文件自动分类工具 |
+| INI 配置格式 | 分类规则定义 |
+| HTML5 / CSS3 | 项目下载页面 |
+| 7-Zip | 压缩包处理依赖库 |
+
+---
+
+## 🚀 快速开始
+
+### 前置条件
+
+- Windows 操作系统（7 / 8 / 10 / 11）
+
+### 安装步骤
+
+1. **下载 DropIt 绿色版**
+   - 从项目 `软件在这里/dropit851.zip` 下载并解压
+   - 或访问 [DropIt 官网](https://www.dropitproject.com/) 获取最新版
+
+2. **导入高级配置**
+   - 将项目根目录的 `Default.ini` 复制到 DropIt 的 `Profiles/` 目录
+   - 覆盖同名文件即可
+
+3. **启动使用**
+   - 运行 `DropIt.exe`
+   - 选择导入的配置文件
+   - 将文件拖放到 DropIt 图标上，自动分类整理
+
+### 自定义配置
+
+用文本编辑器打开 `Default.ini`，按以下格式添加或修改规则：
+
+```ini
+[规则名称]
+State=Enabled
+Rules=*.扩展名
+Action=$0
+Destination=目标文件夹路径
+```
+
+---
+
+## 📂 项目结构
+
+```
+DropIt-Advanced-Profiles/
+├── Default.ini                                  # 高级分类规则配置文件
+├── index.html                                   # 项目下载页面
+├── 说明.txt                                     # 分类规则简要说明
+├── CNAME                                        # GitHub Pages 自定义域名
+├── README.md                                    # 项目说明
+└── 软件在这里/
+    ├── dropit851.zip                            # DropIt 绿色版压缩包
+    └── dropit851/
+        ├── memo.txt                             # 备注文件
+        ├── 更新日志.txt                          # 更新日志
+        └── DropIt Portable v8.5.1/
+            └── DropIt/
+                ├── DropIt.exe                   # 主程序
+                ├── Guide.pdf                    # 使用手册
+                ├── settings.ini                 # 运行设置
+                ├── Profiles/
+                │   └── Default.ini              # 默认配置
+                ├── Images/                      # 图标资源
+                ├── Languages/                   # 多语言支持
+                │   ├── English.lng              # 英语
+                │   └── SimplifiedChinese.lng    # 简体中文
+                └── Lib/                         # 依赖库
+                    ├── 7z/                      # 7-Zip 压缩库
+                    ├── gallery/                 # 图片画廊
+                    ├── list/                    # 列表生成
+                    ├── pdftotext/               # PDF 转文本
+                    ├── psftp/                   # FTP 传输
+                    ├── rdc/                     # 远程桌面
+                    └── sounds/                  # 提示音效
+```
+
+---
+
+## 📋 分类体系总览
+
+| 大类 | 覆盖格式示例 |
+|------|-------------|
+| 📦 压缩包 | zip, rar, 7z, tar, gz, bz2, xz, iso, cab, lzh, arj, jar, ace, zoo, lzma, lzo |
+| 🖼️ 图片 | jpg, png, gif, bmp, tiff, webp, raw, heic, svg, ico, psd, ai, jp2, exr, tga |
+| 🎬 视频 | mp4, avi, mkv, mov, wmv, flv, webm, m4v, 3gp, rmvb |
+| 🎵 音频 | mp3, wav, flac, aac, ogg, wma, m4a, ape, alac |
+| 📄 文档 | pdf, doc, docx, xls, xlsx, ppt, pptx, txt, rtf, md, csv, xml, json, odt, wps |
+| 💿 安装程序 | exe, msi, dmg, pkg, deb, rpm, apk, ipa |
+| 💻 代码文件 | py, js, ts, go, rs, cs, swift, kt, dart, lua, java, cpp, c, php, sql, sh, bat, ps1 |
+| 📚 电子书 | epub, mobi, azw3, fb2, djvu |
+| 🎨 设计文件 | cdr, sketch, xd, fig |
+| 🗄️ 数据库 | db, sqlite, mdb, accdb |
+| 🖥️ 虚拟机镜像 | vmdk, vdi, vhd, img |
+| 🔤 字体 | ttf, otf, woff, woff2, eot |
+| 🗑️ 临时文件 | tmp, temp, log, cache, bak, old, swp, dmp |
+| 🎯 其它 | *.*（兜底分类，防止遗漏） |
+
+---
+
+## 🤝 贡献与许可证
+
+欢迎提交 PR 或 [报告问题](https://github.com/aiyangdie/DropIt-Advanced-Profiles/issues)！
+
+- 本项目配置文件采用 MIT 开源协议
+- DropIt 软件本身遵循其[官方许可协议](https://www.dropitproject.com/)
+
+---
+
+*📁 拖放即整理，让文件分类不再繁琐*
