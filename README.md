@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/covers/45-DropIt-Advanced-Profiles.jpg" alt="DropIt-Advanced-Profiles 项目封面" width="100%"></p>
+
 # 📁 DropIt-Advanced-Profiles
 
 **Windows DropIt 文件自动分类高级配置，100+ 规则覆盖主流文件格式，开箱即用。**
